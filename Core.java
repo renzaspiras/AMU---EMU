@@ -1,5 +1,9 @@
+import javax.swing.SwingUtilities;
+
 public class Core {
     public static void main(String[] args) {
-        new Body();
+        SwingUtilities.invokeLater(() -> {
+            new Body();
+        });
     }
 }
